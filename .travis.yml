@@ -5,4 +5,4 @@ env:
     - LANG=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
 script:
-- xcodebuild test -scheme Sample -derivedDataPath build -destination 'name=iPhone 5s' -project Sample/Sample.xcodeproj
+- xcodebuild test -project Sample/Sample.xcodeproj -configuration Debug -derivedDataPath build -destination 'name=iPhone 5s' -scheme Sample

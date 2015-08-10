@@ -1,1 +1,1 @@
-xcodebuild test -scheme Sample -derivedDataPath build -destination 'name=iPhone 5s'
+xcodebuild test -project Sample.xcodeproj -configuration Debug -derivedDataPath build -destination 'name=iPhone 5s' -scheme Sample
