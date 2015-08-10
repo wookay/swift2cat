@@ -1,1 +1,1 @@
-xcodebuild -scheme Sample -derivedDataPath DerivedData -destination 'OS=9.0,name=iPhone 5s' test
+xcodebuild -scheme Sample -derivedDataPath DerivedData -destination 'name=iPhone 5s' test
