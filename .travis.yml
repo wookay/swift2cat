@@ -5,4 +5,4 @@ env:
   - LANG=en_US.UTF-8
   - LC_ALL=en_US.UTF-8
 script:
-- xcodebuild test -project Sample/Sample.xcodeproj -configuration Debug -derivedDataPath build -destination 'name=iPhone 5s' -scheme Sample
+  - xctool -project Sample/Sample.xcodeproj -scheme Sample -sdk iphonesimulator run-tests
