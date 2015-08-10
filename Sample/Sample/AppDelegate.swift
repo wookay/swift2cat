@@ -3,7 +3,7 @@
 //  Sample
 //
 //  Created by wookyoung on 10/08/15.
-//  Copyright © 2015 factorcat. All rights reserved.
+//  Copyright (c) 2015 factorcat. All rights reserved.
 //
 
 import UIKit

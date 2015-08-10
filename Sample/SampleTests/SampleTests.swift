@@ -3,11 +3,11 @@
 //  SampleTests
 //
 //  Created by wookyoung on 10/08/15.
-//  Copyright © 2015 factorcat. All rights reserved.
+//  Copyright (c) 2015 factorcat. All rights reserved.
 //
 
+import UIKit
 import XCTest
-//@testable import Sample
 
 class SampleTests: XCTestCase {
     
@@ -23,13 +23,12 @@ class SampleTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertTrue(true)
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measureBlock() {
             // Put the code you want to measure the time of here.
         }
     }
