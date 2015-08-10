@@ -1,8 +1,8 @@
 language: objective-c
 osx_image: xcode6.4
-env:
-  global:
-  - LANG=en_US.UTF-8
-  - LC_ALL=en_US.UTF-8
-script:
-  - xctool -project Sample/Sample.xcodeproj -scheme Sample -sdk iphonesimulator run-tests
+xcode_workspace: Sample/Sample.xcworkspace
+xcode_scheme: Sample
+xcode_sdk: iphonesimulator
+branches:
+  only:
+    - master
