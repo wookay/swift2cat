@@ -378,6 +378,7 @@
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.SampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +444,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.SampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +457,7 @@
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.SampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,6 +472,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.factor.SampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

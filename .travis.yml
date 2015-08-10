@@ -5,4 +5,5 @@ env:
     - LANG=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
 script:
+- xcodebuild -list -workspace Sample/Sample.xcodeproj/project.xcworkspace/
 - xcodebuild test -workspace Sample/Sample.xcodeproj/project.xcworkspace/ -configuration Debug -destination 'name=iPhone 5s' -scheme Sample -derivedDataPath build -sdk iphonesimulator
