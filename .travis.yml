@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode6.4
 xcode_workspace: Sample/Sample.xcodeproj/project.xcworkspace
-xcode_scheme: Sample
+xcode_scheme: SampleTests
 xcode_sdk: iphonesimulator
 branches:
   only:
