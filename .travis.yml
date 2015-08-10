@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode63
+env:
+  global:
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
+script:
+- xcodebuild test -project Sample/Sample.xcodeproj -scheme Sample -sdk iphonesimulator -configuration Release -derivedDataPath build -destination "platform=iOS Simulator,name=iPhone 5s" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO GCC_SYMBOLS_PRIVATE_EXTERN=NO
