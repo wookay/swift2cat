@@ -3,8 +3,6 @@ osx_image: xcode6.4
 xcode_workspace: Sample/Sample.xcodeproj/project.xcworkspace
 xcode_scheme: Sample
 xcode_sdk: iphonesimulator
-before_install:
-  - pip install xUnique
 branches:
   only:
     - master

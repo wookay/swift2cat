@@ -41,14 +41,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C800FCE375FEC4DB202CFADC1511B693 /* Frameworks */ = {
+		2A2DA7ECC954938FD3F5B15C2EBFC09D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A2DA7ECC954938FD3F5B15C2EBFC09D /* Frameworks */ = {
+		C800FCE375FEC4DB202CFADC1511B693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,14 +58,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BE81BD8E390DC9384AC30E88B7E78224 = {
+		87C48B045FA38DA38F227E25B5088B8F /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
-				899E2495B2BE83DA543C4DF2A8ECF33C /* Products */,
-				AFA58015BA66E84515E76600E246A5D4 /* Sample */,
-				CB982A2BC9AE1CA3EF522B78CCD92F5C /* SampleTests */,
-				87C48B045FA38DA38F227E25B5088B8F /* TestCases */,
+				7ADFC410F8D76DA1EF746012CBDAE977 /* TestTypes.swift */,
 			);
+			name = TestCases;
+			path = ../TestCases;
 			sourceTree = "<group>";
 		};
 		899E2495B2BE83DA543C4DF2A8ECF33C /* Products */ = {
@@ -75,6 +74,14 @@
 				1BFF5C67780178A45AF97EB66E207736 /* SampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDFFB854097F85FB4989632DB8B4ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				120C03775C53E80F19F0076112475AC3 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		AFA58015BA66E84515E76600E246A5D4 /* Sample */ = {
@@ -90,12 +97,14 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
-		E7AB81AEEBB57B64D2735F792E6AAC13 /* Supporting Files */ = {
+		BE81BD8E390DC9384AC30E88B7E78224 = {
 			isa = PBXGroup;
 			children = (
-				72328E5636B8E0B652AE7CA158C45BCE /* Info.plist */,
+				899E2495B2BE83DA543C4DF2A8ECF33C /* Products */,
+				AFA58015BA66E84515E76600E246A5D4 /* Sample */,
+				CB982A2BC9AE1CA3EF522B78CCD92F5C /* SampleTests */,
+				87C48B045FA38DA38F227E25B5088B8F /* TestCases */,
 			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CB982A2BC9AE1CA3EF522B78CCD92F5C /* SampleTests */ = {
@@ -107,21 +116,12 @@
 			path = SampleTests;
 			sourceTree = "<group>";
 		};
-		9BDFFB854097F85FB4989632DB8B4ED9 /* Supporting Files */ = {
+		E7AB81AEEBB57B64D2735F792E6AAC13 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				120C03775C53E80F19F0076112475AC3 /* Info.plist */,
+				72328E5636B8E0B652AE7CA158C45BCE /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		87C48B045FA38DA38F227E25B5088B8F /* TestCases */ = {
-			isa = PBXGroup;
-			children = (
-				7ADFC410F8D76DA1EF746012CBDAE977 /* TestTypes.swift */,
-			);
-			name = TestCases;
-			path = ../TestCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +134,6 @@
 				E22F0D8AE9EFF0905611E7B0218B80C9 /* Sources */,
 				C800FCE375FEC4DB202CFADC1511B693 /* Frameworks */,
 				BF209F4BDE53DC583F919C12519A5A9C /* Resources */,
-				6AD401F0E806909E34F2907BFDC03A6A /* Uniquify and Sort Project */,
 			);
 			buildRules = (
 			);
@@ -220,39 +219,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6AD401F0E806909E34F2907BFDC03A6A /* Uniquify and Sort Project */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Uniquify and Sort Project";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh $SRCROOT/scripts/uniquify.sh";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		E22F0D8AE9EFF0905611E7B0218B80C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				709FAA8F52D3FCCA4B75584B7A0A47BD /* AppDelegate.swift in Sources */,
-				603B878FA69289112D97ECFAD93D6F8E /* ViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6E7D4E8B9C401EB963F4F30BBCCB5128 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4266CC5A8DA91F0E641E0424904A3898 /* SampleTests.swift in Sources */,
 				610C4312C60766D6FEF0D270AB5720A4 /* TestTypes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22F0D8AE9EFF0905611E7B0218B80C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709FAA8F52D3FCCA4B75584B7A0A47BD /* AppDelegate.swift in Sources */,
+				603B878FA69289112D97ECFAD93D6F8E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,13 +361,18 @@
 			};
 			name = Debug;
 		};
-		DD7047DAFC52334FE76F8764CBBE5426 /* Release */ = {
+		CB7BBA1B4D3ED398E6B0484D62AC207A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Sample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
 			};
 			name = Release;
 		};
@@ -408,24 +395,28 @@
 			};
 			name = Debug;
 		};
-		CB7BBA1B4D3ED398E6B0484D62AC207A /* Release */ = {
+		DD7047DAFC52334FE76F8764CBBE5426 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		87F01B02BC24E5AAD5DD48F8C2F969BA /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9414C137A0614EB0FFC30DE03A72CD2 /* Debug */,
+				CB7BBA1B4D3ED398E6B0484D62AC207A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		94692ACAAD330129970552B1134831CA /* Build configuration list for PBXProject "Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -440,15 +431,6 @@
 			buildConfigurations = (
 				97AE05EDE653A0B344001CF691230741 /* Debug */,
 				DD7047DAFC52334FE76F8764CBBE5426 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		87F01B02BC24E5AAD5DD48F8C2F969BA /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9414C137A0614EB0FFC30DE03A72CD2 /* Debug */,
-				CB7BBA1B4D3ED398E6B0484D62AC207A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
