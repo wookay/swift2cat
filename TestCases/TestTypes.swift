@@ -6,8 +6,10 @@
 //  Copyright © 2015 factorcat. All rights reserved.
 //
 
-import XCTest
 
+// https://github.com/wookay/juliacat/blob/master/TestCases/test_types.jl
+
+import XCTest
 // @testable import Sample
 
 class TestTypes: XCTestCase {
@@ -83,9 +85,11 @@ class TestTypes: XCTestCase {
     func testRange() {
         XCTAssertTrue((1..<5 as Any) is Range<Int>)
         XCTAssertEqual("Swift.Range<Swift.Int>.Type", _stdlib_getDemangledTypeName((1..<5).dynamicType))
+        XCTAssertEqual(4, (1..<5).count)
         
         XCTAssertTrue((1...5 as Any) is Range<Int>)
         XCTAssertEqual("Swift.Range<Swift.Int>.Type", _stdlib_getDemangledTypeName((1...5).dynamicType))
+        XCTAssertEqual(5, (1...5).count)
     }
     
     func testTuple() {

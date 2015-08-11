@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FCDCF4947EA871137590A719259CAD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB92E8E99749FF8A80C5DF1BEF1A26E /* Images.xcassets */; };
+		1CCFE9FD1B79926B009B9DF9 /* TestNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCFE9FC1B79926B009B9DF9 /* TestNumeric.swift */; };
 		4266CC5A8DA91F0E641E0424904A3898 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16500CF3474C5CB72CF57CE0B336BF38 /* SampleTests.swift */; };
 		49BDDA6C73E8A24CB5E3F463A4341BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82959917FC85177C3386D22A16253FE /* Main.storyboard */; };
 		603B878FA69289112D97ECFAD93D6F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DF40C62F7A9C5ADE1217E7ACB9B76 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		120C03775C53E80F19F0076112475AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16500CF3474C5CB72CF57CE0B336BF38 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
 		1BFF5C67780178A45AF97EB66E207736 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCFE9FC1B79926B009B9DF9 /* TestNumeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumeric.swift; sourceTree = "<group>"; };
 		4B0DF40C62F7A9C5ADE1217E7ACB9B76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CEF066495F0571C5F27F8282ECA5480 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72328E5636B8E0B652AE7CA158C45BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADFC410F8D76DA1EF746012CBDAE977 /* TestTypes.swift */,
+				1CCFE9FC1B79926B009B9DF9 /* TestNumeric.swift */,
 			);
 			name = TestCases;
 			path = ../TestCases;
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4266CC5A8DA91F0E641E0424904A3898 /* SampleTests.swift in Sources */,
+				1CCFE9FD1B79926B009B9DF9 /* TestNumeric.swift in Sources */,
 				610C4312C60766D6FEF0D270AB5720A4 /* TestTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
