@@ -10,10 +10,9 @@ import XCTest
 
 class TestNumeric: XCTestCase {
     
-    func testExample() {
+    func testPower() {
         XCTAssertEqual(0xF*pow(10, 3), 15e3)
         XCTAssertEqual(0xF*pow(2, 3), 0xFp3)
     }
-    
-    
+
 }
