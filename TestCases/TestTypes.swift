@@ -79,4 +79,23 @@ class TestTypes: XCTestCase {
         // print(_stdlib_getDemangledTypeName(t.dynamicType))
         XCTAssertEqual("SampleTests.TestTypes.(testStruct (SampleTests.TestTypes) -> () -> ()).(ABC #1).Type", _stdlib_getDemangledTypeName(t.dynamicType))
     }
+    
+    func testRange() {
+        XCTAssertTrue((1..<5 as Any) is Range<Int>)
+        XCTAssertEqual("Swift.Range<Swift.Int>.Type", _stdlib_getDemangledTypeName((1..<5).dynamicType))
+        
+        XCTAssertTrue((1...5 as Any) is Range<Int>)
+        XCTAssertEqual("Swift.Range<Swift.Int>.Type", _stdlib_getDemangledTypeName((1...5).dynamicType))
+    }
+    
+    func testTuple() {
+        XCTAssertTrue((() as Any) is ())
+        XCTAssertEqual("().Type", _stdlib_getDemangledTypeName(().dynamicType))
+    }
+  
+    func testOptional() {
+        let n: Optional<Int> = 1
+        XCTAssertEqual(1, n!)
+        XCTAssertEqual("Swift.Optional<Swift.Int>.Type", _stdlib_getDemangledTypeName(n.dynamicType))
+    }
 }
