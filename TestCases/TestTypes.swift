@@ -48,7 +48,7 @@ class TestTypes: XCTestCase {
     
     func testClass() {
         XCTAssertTrue((self as Any) is TestTypes)
-        //XCTAssertEqual("SampleTests.TestTypes", _stdlib_getDemangledTypeName(self))
+        XCTAssertTrue(_stdlib_getDemangledTypeName(self).hasSuffix(".TestTypes"))
     }
 
     func testFunction() {
@@ -67,9 +67,11 @@ class TestTypes: XCTestCase {
             case B
         }
         XCTAssertTrue((ABC.A as Any) is ABC)
-        // print(_stdlib_getDemangledTypeName(ABC.A.dynamicType))
-        //XCTAssertEqual("SampleTests.TestTypes.(testEnum (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(ABC.A))
-        //XCTAssertEqual("SampleTests.TestTypes.(testEnum (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(ABC.B))
+        XCTAssertTrue(_stdlib_getDemangledTypeName(ABC.A).hasSuffix(".TestTypes) -> () -> ()).(ABC #1)"))
+        XCTAssertTrue(_stdlib_getDemangledTypeName(ABC.B).hasSuffix(".TestTypes) -> () -> ()).(ABC #1)"))
+//        print(_stdlib_getDemangledTypeName(ABC.A.dynamicType))
+//        XCTAssertEqual("SampleTests.TestTypes.(testEnum (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(ABC.A))
+//        XCTAssertEqual("SampleTests.TestTypes.(testEnum (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(ABC.B))
     }
     
     func testStruct() {
@@ -78,8 +80,9 @@ class TestTypes: XCTestCase {
         }
         let t = ABC()
         XCTAssertTrue((t as Any) is ABC)
-        // print(_stdlib_getDemangledTypeName(t.dynamicType))
-        //XCTAssertEqual("SampleTests.TestTypes.(testStruct (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(t))
+        XCTAssertTrue(_stdlib_getDemangledTypeName(t).hasSuffix(".TestTypes) -> () -> ()).(ABC #1)"))
+//        print(_stdlib_getDemangledTypeName(t.dynamicType))
+//        XCTAssertEqual("SampleTests.TestTypes.(testStruct (SampleTests.TestTypes) -> () -> ()).(ABC #1)", _stdlib_getDemangledTypeName(t))
     }
     
     func testRange() {
@@ -94,8 +97,8 @@ class TestTypes: XCTestCase {
         XCTAssertEqual(6, (1...5).endIndex)
         
 //      if #available(iOS 9.0, *) {
-//          XCTAssertEqual(4, (1..<5).count)
-//          XCTAssertEqual(5, (1...5).count)
+          XCTAssertEqual(4, (1..<5).count)
+          XCTAssertEqual(5, (1...5).count)
 //      }
     }
     

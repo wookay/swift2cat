@@ -20,6 +20,8 @@
 		1C1AEABB1B7A40E100301DBB /* TestNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AEAB41B7A40E100301DBB /* TestNumeric.swift */; };
 		1C1AEABD1B7A40E100301DBB /* TestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AEAB51B7A40E100301DBB /* TestTypes.swift */; };
 		1C1AEABE1B7A40E100301DBB /* TestTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AEAB51B7A40E100301DBB /* TestTypes.swift */; };
+		1C75E20E1B7A5E23000AFBD3 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75E20D1B7A5E23000AFBD3 /* TestClass.swift */; };
+		1C75E20F1B7A5E23000AFBD3 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75E20D1B7A5E23000AFBD3 /* TestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		1C1AEAB31B7A40E100301DBB /* TestArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestArray.swift; sourceTree = "<group>"; };
 		1C1AEAB41B7A40E100301DBB /* TestNumeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNumeric.swift; sourceTree = "<group>"; };
 		1C1AEAB51B7A40E100301DBB /* TestTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTypes.swift; sourceTree = "<group>"; };
+		1C75E20D1B7A5E23000AFBD3 /* TestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,7 @@
 				1C1AEAB31B7A40E100301DBB /* TestArray.swift */,
 				1C1AEAB41B7A40E100301DBB /* TestNumeric.swift */,
 				1C1AEAB51B7A40E100301DBB /* TestTypes.swift */,
+				1C75E20D1B7A5E23000AFBD3 /* TestClass.swift */,
 			);
 			name = TestCases;
 			path = ../TestCases;
@@ -289,6 +293,7 @@
 				1C1AEABA1B7A40E100301DBB /* TestNumeric.swift in Sources */,
 				1C1AEAB71B7A40E100301DBB /* TestArray.swift in Sources */,
 				1C1AEABD1B7A40E100301DBB /* TestTypes.swift in Sources */,
+				1C75E20E1B7A5E23000AFBD3 /* TestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +305,7 @@
 				1C1AEABB1B7A40E100301DBB /* TestNumeric.swift in Sources */,
 				1C1AEAB81B7A40E100301DBB /* TestArray.swift in Sources */,
 				1C1AEABE1B7A40E100301DBB /* TestTypes.swift in Sources */,
+				1C75E20F1B7A5E23000AFBD3 /* TestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +516,7 @@
 				1C1AEAAB1B7A40C500301DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C1AEAAC1B7A40C500301DBB /* Build configuration list for PBXNativeTarget "SwiftTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				1C1AEAAE1B7A40C500301DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C1AEAAF1B7A40C500301DBB /* Build configuration list for PBXNativeTarget "SwiftTwoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				1C1AEAB11B7A40C500301DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
