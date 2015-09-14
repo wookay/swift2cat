@@ -15,7 +15,7 @@ class TestArray: XCTestCase {
     }
     
     func testFind() {
-        XCTAssertEqual(2, [1,2,5].indexOf(5)!)
+        XCTAssertEqual(2, [1,2,5].indexOf(5))
         XCTAssertEqual(2, [1,2,5].indexOf(5) as Int!)
         XCTAssertNil([1,2,3].indexOf(5))
     }
