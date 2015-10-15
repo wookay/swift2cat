@@ -6,3 +6,6 @@ xcode_sdk: iphonesimulator
 branches:
   only:
     - master
+sudo: false
+notifications:
+  email: false
